@@ -1,0 +1,123 @@
+body{
+    padding: 5px;
+    margin: 5px;
+    background: rgba(23, 216, 255, 0.97);
+    display: flex;
+    /*display: inline-flex;*/
+}
+.container{
+    background:darkgray;
+    padding: 25px;
+    margin: 75px;
+    height: 350px;
+    width: 1000px;
+    top: 50%;
+    left: 50%;
+    border: solid red 2px ;
+    box-shadow: 0 0  10px 3px darkred;
+
+}
+.question  {
+    margin:25px;
+    padding:25px;
+    border-radius:30px;
+}
+ .option {
+     display: inline-block;
+     border-radius:20px;
+     padding: 10px 0 10px 15px;
+     margin: 15px 0 10px 15px;
+     font-size: 18px;
+     color:white;
+     width: 350px;
+     background: #e62430;
+}
+ .option:hover{
+     /*font-size:30px;*/
+     cursor:pointer;
+     border-radius: 22px;
+     color: #ddd0de;
+     background: red;
+ }
+ #question{
+     font-size: 25px;
+     color: aqua;
+
+ }
+ #nextButton{
+     background: #e62430;
+     border-radius: 50px;
+     padding: 15px;
+     margin: 15px;
+     width: 100px;
+     height: 45px;
+     /*display: block;*/
+
+     outline: none;
+
+
+ }
+ #nextButton:hover{
+     cursor: pointer;
+     background: #e61000;
+
+ }
+ .title{
+     text-align: center ;
+     background: red;
+     padding: 25px;
+     margin: 5px;
+     font-size:30px;
+     border-radius: 30px;
+     /*display: unset;*/
+
+ }
+.container.option.option {
+    background: red ;
+    border-radius: 35px;
+    font-size: 18px;
+}
+#result{
+    text-align: center  ;
+    font-size: 30px;
+    color: darkred;
+
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        width: 100%;
+    }
+
+    .container {
+        margin-top: 20px;
+        margin-left: 30px;
+        height: 500px;
+    }
+
+    .question {
+        margin: 16px;
+        padding: 0;}
+
+        .option {
+            margin: 5px 0 5px 15px;}
+
+            #nextButton{ 
+                width: 350px;
+                margin-left: 25px;
+            }
+
+
+            #result{
+                text-align: center  ;
+                font-size: 30px;
+                color: darkred;
+                height: 300px;
+                margin-left: 30px;
+            
+            }
+            
+
+
+
+}
